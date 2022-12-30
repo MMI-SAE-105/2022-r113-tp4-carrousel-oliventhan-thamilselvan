@@ -13,3 +13,32 @@ max-width width width
       /* hauteur "auto" */
       height: auto;
     }
+    .carrousel_parent-ecrans {
+      /* aligne horizontalement les enfants */
+      display: flex;
+      /* largeur du parent */
+      width: 100%;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth; /* animation de défilement */
+    
+    }
+    .carrousel_ecran {
+      /* largeur du parent pour chaque enfant */
+      width: 100%;
+      /* permet de garder toute la largeur du parent */
+      width: 100%;
+      scroll-snap-align: start;
+      flex: none;
+
+
+    }
+    .carrousel_ecran figure {
+      /* enlève les marges par défaut */
+      margin: 0;
+    }
+
+    .carrousel {
+        position: relative;
+      }
+      
